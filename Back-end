@@ -1,0 +1,16 @@
+const furiaCS = ["FalleN", "chelo", "skullz", "yuurih", "KSCERATO"];
+
+const indiceChelo = furiaCS.indexOf("chelo");
+console.log(indiceChelo);
+
+furiaCS.splice(indiceChelo, 2, "molodoy", "YEKINDAR");
+console.log(furiaCS);
+
+const nomesMaiusculos = furiaCS.map(nome => nome.toUpperCase());
+console.log(nomesMaiusculos);
+
+const nomesOrdenados = [...nomesMaiusculos].sort();
+console.log(nomesOrdenados);
+
+const nomesComY = furiaCS.filter(nome => nome.toLowerCase().startsWith("y"));
+console.log(nomesComY);
